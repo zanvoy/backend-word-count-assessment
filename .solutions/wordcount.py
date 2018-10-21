@@ -47,8 +47,6 @@ import sys
 # and builds and returns a word/count dict for it.
 # Then print_words() and print_top() can just call the utility function.
 
-# LAB(begin solution)
-
 
 def word_count_dict(filename):
     """Returns a word/count dict for this filename."""
@@ -92,8 +90,6 @@ def print_top(filename):
     # Print the first 20
     for item in items[:20]:
         print item[0], item[1]
-
-# LAB(end solution)
 
 
 # This basic command line argument parsing code is provided and
