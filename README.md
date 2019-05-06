@@ -9,14 +9,56 @@ Complete the command-line python program named `wordcount.py` so that it will co
 ## Example
 ```console
 $ python wordcount.py --count alice.txt
+"'tis : 1
+"--said : 1
+"come : 2
+"coming : 1
+"edwin : 1
+"french, : 1
+"he's : 1
+"how : 2
+"i : 8
+"i'll : 2
+"it" : 2
+"keep : 1
+"let : 1
+"much : 1
+"poison" : 1
+"purpose"?' : 1
+```
+
+```console
 $ python wordcount.py --topcount alice.txt
+Top 20 most frequent words in alice.txt
+the : 1605
+and : 766
+to : 706
+a : 614
+she : 518
+of : 493
+said : 421
+it : 362
+in : 352
+was : 333
+you : 265
+i : 261
+as : 249
+that : 222
+alice : 221
+her : 208
+at : 206
+had : 176
+with : 169
+all : 155
 ```
 
 ## Part A
 For the `--count` flag, implement a `print_words(filename)` function that counts how often each word appears in the text and prints:
-  word1 count1
-  word2 count2
-  ...
+
+    word1 : count1
+    word2 : count2
+    ...
+  
 Print the above list in order, sorted alphabetically by word (Python will sort punctuation to come before letters which is fine). Store all the words as lowercase, so 'The' and 'the' count as the same word.
 
 ## Part B
